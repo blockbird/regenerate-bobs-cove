@@ -8,13 +8,13 @@ type ButtonLinkProps = ActionLink & {
 
 const variantClasses: Record<LinkVariant, string> = {
   primary:
-    "bg-lime text-deep shadow-[0_18px_40px_rgba(148,205,66,0.28)] hover:bg-[#a7d95b]",
+    "bg-ink text-white hover:bg-ink/80 shadow-sm",
   secondary:
-    "border border-white/30 bg-white/12 text-white backdrop-blur-md hover:bg-white/18",
+    "border border-ink/20 bg-transparent text-ink hover:bg-ink/5",
   light:
-    "bg-white text-deep shadow-[0_18px_40px_rgba(255,255,255,0.18)] hover:bg-white/92",
+    "bg-white text-ink shadow-sm hover:bg-white/90",
   ghost:
-    "border border-white/25 bg-transparent text-white hover:bg-white/10",
+    "border border-white/30 bg-transparent text-white hover:bg-white/10",
 };
 
 export function ButtonLink({
@@ -26,8 +26,8 @@ export function ButtonLink({
   return (
     <Link
       className={[
-        "inline-flex min-h-12 items-center justify-center rounded-full px-5 py-3 text-sm font-semibold tracking-[0.01em] transition duration-200",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime focus-visible:ring-offset-2 focus-visible:ring-offset-deep",
+        "inline-flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-medium transition-all duration-300",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper",
         "hover:-translate-y-0.5",
         variantClasses[variant],
         className,

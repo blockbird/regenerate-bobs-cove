@@ -15,17 +15,15 @@ export function SectionHeading({
     <div className="max-w-3xl">
       <span
         className={[
-          "inline-flex rounded-full border px-3 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em]",
-          inverted
-            ? "border-white/15 bg-white/10 text-white/90"
-            : "border-deep/10 bg-deep/6 text-deep",
+          "text-xs font-semibold uppercase tracking-widest",
+          inverted ? "text-white/80" : "text-ink-muted",
         ].join(" ")}
       >
         {eyebrow}
       </span>
       <h2
         className={[
-          "mt-4 font-display text-4xl leading-none tracking-[-0.05em] text-balance sm:text-5xl lg:text-6xl",
+          "mt-6 font-display text-4xl font-normal leading-[1.1] tracking-tight text-balance sm:text-5xl lg:text-6xl",
           inverted ? "text-white" : "text-ink",
         ].join(" ")}
       >
@@ -33,8 +31,8 @@ export function SectionHeading({
       </h2>
       <p
         className={[
-          "mt-4 max-w-3xl text-base leading-7 text-pretty sm:text-lg",
-          inverted ? "text-white/78" : "text-ink/70",
+          "mt-6 max-w-2xl text-lg leading-relaxed text-pretty",
+          inverted ? "text-white/80" : "text-ink-muted",
         ].join(" ")}
       >
         {description}
