@@ -1,55 +1,43 @@
-# Regenerate Bob's Cove — Codex handoff pack
+# Regenerate Bob's Cove
 
-This folder is meant to be dropped into a fresh GitHub repo and used as the handoff point for a production build in Codex.
+Production-ready v1 website for the Regenerate Bob's Cove project, built with Next.js App Router, TypeScript, and Tailwind CSS.
 
-## What is in here
+## Stack
 
-- `AGENTS.md` — project rules and implementation guardrails for Codex.
-- `PROJECT_BRIEF.md` — the product/design brief.
-- `ASSET_GUIDE.md` — which images and logos to use where.
-- `CODEX_STARTER_PROMPTS.md` — copy/paste prompts for the first implementation pass, refinement, and QA.
-- `design-reference/` — the existing HTML concept and preview images from the earlier mockup.
-- `public/brand/` and `public/images/` — logos and photo assets.
-
-## Recommended build stack
-
-- Next.js (App Router)
+- Next.js 16
+- React 19
 - TypeScript
-- Tailwind CSS
-- Deployed on Vercel
-- Simple content model stored in code for v1 (no CMS unless needed later)
+- Tailwind CSS 4
 
-## Suggested repo setup
+## Getting started
 
-```text
-.
-├── AGENTS.md
-├── PROJECT_BRIEF.md
-├── ASSET_GUIDE.md
-├── CODEX_STARTER_PROMPTS.md
-├── public/
-│   ├── brand/
-│   └── images/
-├── src/
-│   ├── app/
-│   ├── components/
-│   ├── content/
-│   └── lib/
-└── design-reference/
+```bash
+npm install
+npm run dev
 ```
 
-## Recommended workflow
+Open [http://localhost:3000](http://localhost:3000).
 
-1. Create a new GitHub repo.
-2. Copy this folder into the repo root.
-3. Open the repo in Codex.
-4. Start with the prompt in `CODEX_STARTER_PROMPTS.md`.
-5. Let Codex create the site in a feature branch or PR.
-6. Review visuals locally and in Vercel preview deployments.
-7. Use Codex again for copy polish, accessibility, and performance cleanup.
+## Available scripts
 
-## Notes
+```bash
+npm run dev
+npm run lint
+npm run build
+npm run start
+```
 
-- Treat the existing `design-reference/index_standalone.html` file as **visual reference**, not production-ready source code.
-- Do not invent impact metrics, donor names, or partner claims.
-- Keep the site calm, place-first, and community-led.
+## Content editing
+
+Most editable copy and page structure for the site lives in `src/content/site.ts`.
+
+## Design source material
+
+The original handoff files are still included for reference:
+
+- `AGENTS.md`
+- `PROJECT_BRIEF.md`
+- `ASSET_GUIDE.md`
+- `design-reference/`
+
+Treat `design-reference/index_standalone.html` as a visual concept only, not production source.

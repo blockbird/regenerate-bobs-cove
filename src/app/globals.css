@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-public-sans);
+  --font-display: var(--font-manrope);
+}
+
+@theme {
+  --color-paper: #f6f6f1;
+  --color-ink: #123133;
+  --color-deep: #045459;
+  --color-deep-2: #06383b;
+  --color-lime: #94cd42;
+  --color-lake: #5ec7d8;
+  --color-sand: #ece6d7;
+  --shadow-panel: 0 24px 70px rgba(4, 84, 89, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(148, 205, 66, 0.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(94, 199, 216, 0.08), transparent 24%),
+    linear-gradient(180deg, #faf9f4 0%, #f6f6f1 100%);
+  color: var(--color-ink);
+  font-family: var(--font-public-sans), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(148, 205, 66, 0.34);
+  color: var(--color-deep);
+}
+
+.shell {
+  width: min(1180px, calc(100% - 1.5rem));
+  margin-inline: auto;
+}
+
+.panel-surface {
+  border: 1px solid rgba(4, 84, 89, 0.1);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(18px);
+}
+
+.glass-surface {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 60px rgba(0, 22, 26, 0.18);
+  backdrop-filter: blur(18px);
+}
+
+@media (min-width: 48rem) {
+  .shell {
+    width: min(1180px, calc(100% - 2rem));
+  }
+}
