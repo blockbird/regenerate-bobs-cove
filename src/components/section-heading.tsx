@@ -16,7 +16,7 @@ export function SectionHeading({
       <span
         className={[
           "text-xs font-semibold uppercase tracking-widest",
-          inverted ? "text-white/80" : "text-ink-muted",
+          inverted ? "text-white/80" : "text-charcoal",
         ].join(" ")}
       >
         {eyebrow}
@@ -32,7 +32,7 @@ export function SectionHeading({
       <p
         className={[
           "mt-6 max-w-2xl text-lg leading-relaxed text-pretty",
-          inverted ? "text-white/80" : "text-ink-muted",
+          inverted ? "text-white/80" : "text-charcoal",
         ].join(" ")}
       >
         {description}

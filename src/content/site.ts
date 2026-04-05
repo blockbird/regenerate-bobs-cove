@@ -68,7 +68,7 @@ export const siteContent = {
         variant: "secondary" as const,
       },
       image: {
-        src: "/images/picnicpoint.jpg",
+        src: "/images/hero2.jpg",
         alt: "Aerial view across the turquoise water and shoreline of Bob's Cove.",
       },
       focusAreas: [
