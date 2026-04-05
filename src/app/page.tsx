@@ -92,12 +92,12 @@ export default function HomePage() {
               <ul className="mt-16 flex flex-col gap-10">
                 {home.why.points.map((point, index) => (
                   <li className="flex items-start gap-6" key={point.title}>
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-ink/10 text-xs font-semibold text-ink-muted">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-ink/10 text-xs font-semibold text-charcoal">
                       0{index + 1}
                     </span>
                     <div>
                       <h3 className="text-xl font-medium tracking-tight text-ink">{point.title}</h3>
-                      <p className="mt-3 text-base leading-relaxed text-ink-muted">
+                      <p className="mt-3 text-base leading-relaxed text-charcoal">
                         {point.description}
                       </p>
                     </div>
@@ -132,13 +132,13 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="mt-8">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-ink-muted">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-charcoal">
                     Biodiversity
                   </span>
                   <h3 className="mt-3 font-display text-3xl font-normal tracking-tight text-ink">
                     {bird.name}
                   </h3>
-                  <p className="mt-4 text-base leading-relaxed text-ink-muted">
+                  <p className="mt-4 text-base leading-relaxed text-charcoal">
                     {bird.summary}
                   </p>
                   <p className="mt-6 text-sm font-medium text-ink">
@@ -178,13 +178,13 @@ export default function HomePage() {
                     />
                   </div>
                   <div>
-                    <span className="text-xs font-semibold uppercase tracking-widest text-ink-muted">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-charcoal">
                       {feature.kicker}
                     </span>
                     <h3 className="mt-3 font-display text-2xl font-normal tracking-tight text-ink">
                       {feature.title}
                     </h3>
-                    <p className="mt-4 text-base leading-relaxed text-ink-muted">
+                    <p className="mt-4 text-base leading-relaxed text-charcoal">
                       {feature.summary}
                     </p>
                   </div>
@@ -196,7 +196,7 @@ export default function HomePage() {
               <h3 className="font-display text-3xl font-normal leading-[1.15] tracking-tight text-ink sm:text-4xl">
                 {home.work.emphasis.title}
               </h3>
-              <p className="mt-6 text-base leading-relaxed text-ink-muted">
+              <p className="mt-6 text-base leading-relaxed text-charcoal">
                 {home.work.emphasis.description}
               </p>
               <ul className="mt-10 flex flex-col gap-8">
@@ -205,7 +205,7 @@ export default function HomePage() {
                     <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-lime" />
                     <div>
                       <h4 className="text-lg font-medium tracking-tight text-ink">{principle.title}</h4>
-                      <p className="mt-2 text-base leading-relaxed text-ink-muted">
+                      <p className="mt-2 text-base leading-relaxed text-charcoal">
                         {principle.description}
                       </p>
                     </div>
@@ -300,7 +300,7 @@ export default function HomePage() {
             />
             <Link
               href="/stories"
-              className="group inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-ink transition-colors hover:text-ink-muted"
+              className="group inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-ink transition-colors hover:text-charcoal"
             >
               View all stories
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -320,13 +320,13 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="mt-8 flex flex-1 flex-col">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-ink-muted">
+                  <span className="text-xs font-semibold uppercase tracking-widest text-charcoal">
                     {story.meta}
                   </span>
                   <h3 className="mt-3 font-display text-2xl font-normal tracking-tight text-ink">
                     {story.title}
                   </h3>
-                  <p className="mt-4 flex-1 text-base leading-relaxed text-ink-muted">
+                  <p className="mt-4 flex-1 text-base leading-relaxed text-charcoal">
                     {story.summary}
                   </p>
                   <Link

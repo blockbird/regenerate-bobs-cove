@@ -29,7 +29,7 @@ export function SiteHeader() {
         <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
           {siteContent.navigation.map((item) => (
             <Link
-              className="text-sm font-medium text-ink-muted transition-colors hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+              className="text-sm font-medium text-charcoal transition-colors hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
               href={item.href}
               key={item.href}
             >
