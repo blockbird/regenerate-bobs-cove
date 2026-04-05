@@ -5,40 +5,43 @@ import { siteContent } from "@/content/site";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/40 bg-paper/82 backdrop-blur-xl">
-      <div className="shell flex flex-wrap items-center justify-between gap-4 py-4">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-paper/90 py-4 backdrop-blur-md transition-all">
+      <div className="shell flex items-center justify-between gap-4">
         <Link
-          className="inline-flex min-w-0 items-center gap-3 rounded-full pr-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deep focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+          className="group inline-flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
           href="/"
         >
           <Image
             alt="Regenerate Bob's Cove logo"
-            className="h-12 w-12 rounded-full shadow-[0_12px_24px_rgba(4,84,89,0.12)]"
-            height={48}
+            className="h-10 w-10 rounded-full transition-transform duration-500 group-hover:scale-105"
+            height={40}
             priority
             src="/brand/RBCround.png"
-            width={48}
+            width={40}
           />
-          <span className="min-w-0">
-            <strong className="block truncate font-display text-base leading-tight tracking-[-0.03em] text-ink">
+          <div>
+            <strong className="block font-display text-xl tracking-tight text-ink">
               {siteContent.siteName}
             </strong>
-            <span className="block truncate text-sm text-ink/65">
-              {siteContent.location}
-            </span>
-          </span>
+          </div>
         </Link>
 
-        <nav aria-label="Primary" className="flex flex-wrap justify-end gap-2">
+        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
           {siteContent.navigation.map((item) => (
             <Link
-              className="rounded-full px-4 py-3 text-sm font-medium text-ink/68 transition hover:bg-deep/6 hover:text-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deep focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+              className="text-sm font-medium text-ink-muted transition-colors hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
               href={item.href}
               key={item.href}
             >
               {item.label}
             </Link>
           ))}
+          <Link
+            className="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-ink/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+            href="/get-involved"
+          >
+            Get Involved
+          </Link>
         </nav>
       </div>
     </header>

@@ -11,6 +11,12 @@ export type ImageAsset = {
   src: string;
 };
 
+export type SocialLink = {
+  handle: string;
+  href: string;
+  label: string;
+};
+
 const navigation = [
   { href: "/", label: "Home" },
   { href: "/why-bobs-cove-matters", label: "Why Bob's Cove Matters" },
@@ -19,17 +25,32 @@ const navigation = [
   { href: "/contact", label: "Contact" },
 ];
 
+const socialLinks = [
+  {
+    handle: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61587556109507",
+    label: "Follow on Facebook",
+  },
+  {
+    handle: "Instagram",
+    href: "https://www.instagram.com/regenerate_bobs_cove/",
+    label: "Follow on Instagram",
+  },
+] satisfies readonly SocialLink[];
+
 export const siteContent = {
   siteName: "Regenerate Bob's Cove",
   siteDescription:
     "A community conservation initiative protecting birdlife and restoring habitat in Bob's Cove, New Zealand.",
   location: "Bob's Cove, New Zealand",
   navigation,
+  socialLinks,
   footer: {
     summary:
       "A calm, community-first place to explain the work, share updates, and make participation easy as details are confirmed.",
     links: navigation,
-    note: "Volunteer details, local contacts, and support links can be updated as the project confirms them.",
+    note: "Facebook and Instagram are live now, and direct volunteer or contact details can be added here as the project confirms them.",
+    socialLinks,
   },
   home: {
     hero: {
@@ -474,7 +495,7 @@ export const siteContent = {
       eyebrow: "Contact",
       title: "A simple contact page for the next phase of the project.",
       description:
-        "This page makes space for preferred contact details, volunteer enquiries, and project links once the team confirms the right channels.",
+        "This page now points people to the project's live social channels while preferred direct contact details and volunteer pathways are still being confirmed.",
       image: {
         src: "/images/jetty.JPG",
         alt: "Jetty reaching out over calm lake water at Bob's Cove.",
@@ -494,12 +515,13 @@ export const siteContent = {
         },
         {
           title: "Project updates",
-          status: "Ready for newsletter or socials",
+          status: "Live on social media",
           description:
-            "If the project wants a lightweight update channel, this page can point people to it without adding complexity elsewhere.",
+            "Facebook and Instagram are ready to carry updates right away, giving people a simple place to follow along.",
         },
       ],
-      note: "Until contact details are confirmed, this page still helps visitors understand what kinds of enquiries the project expects to receive.",
+      note: "Until more direct contact details are confirmed, these social links give people a reliable way to follow the project and stay connected.",
+      socialLinks,
       actions: [
         {
           href: "/get-involved",

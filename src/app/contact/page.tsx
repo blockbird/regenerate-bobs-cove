@@ -41,6 +41,28 @@ export default function ContactPage() {
             ))}
           </div>
 
+          <div className="mt-6 panel-surface px-6 py-6 sm:px-7">
+            <h2 className="font-display text-4xl leading-none tracking-[-0.05em] text-balance text-ink">
+              Follow the project
+            </h2>
+            <p className="mt-4 max-w-3xl text-sm leading-7 text-ink/72 sm:text-base">
+              Facebook and Instagram are the current public places to follow updates and get a feel for the project as it grows.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {page.socialLinks.map((item) => (
+                <a
+                  className="inline-flex min-h-12 items-center justify-center rounded-full border border-deep/12 bg-white px-5 py-3 text-sm font-semibold tracking-[0.01em] text-deep shadow-[0_12px_30px_rgba(4,84,89,0.08)] transition duration-200 hover:-translate-y-0.5 hover:bg-white/86 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-deep focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+                  href={item.href}
+                  key={item.href}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
           <div className="mt-6 rounded-[2rem] bg-[radial-gradient(circle_at_top_left,rgba(148,205,66,0.15),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(94,199,216,0.12),transparent_30%),linear-gradient(135deg,#00373c_0%,#004c51_100%)] px-6 py-7 text-white shadow-[0_32px_80px_rgba(0,40,43,0.24)] sm:px-8 sm:py-8">
             <h2 className="font-display text-4xl leading-none tracking-[-0.05em] text-balance">
               Ready for confirmed project channels.

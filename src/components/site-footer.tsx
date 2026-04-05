@@ -5,40 +5,61 @@ import { siteContent } from "@/content/site";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-10 bg-[linear-gradient(180deg,#00363a_0%,#002c2f_100%)] py-12 text-white">
-      <div className="shell grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start">
-        <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+    <footer className="bg-ink py-20 text-white sm:py-32">
+      <div className="shell grid gap-16 lg:grid-cols-[1.5fr_1fr]">
+        <div className="flex flex-col items-start gap-8">
           <Image
             alt="Regenerate Bob's Cove logo"
-            className="h-[5.5rem] w-[5.5rem] rounded-[1.5rem] shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
-            height={88}
-            src="/brand/RBCBOX.png"
-            width={88}
+            className="h-16 w-16 rounded-full"
+            height={64}
+            src="/brand/RBCround.png"
+            width={64}
           />
-          <div className="max-w-2xl">
-            <h2 className="font-display text-3xl tracking-[-0.04em] text-balance">
-              {siteContent.siteName}
-            </h2>
-            <p className="mt-3 max-w-xl text-sm leading-7 text-white/74 sm:text-base">
-              {siteContent.footer.summary}
-            </p>
-            <p className="mt-3 text-sm leading-7 text-white/60">
+          <h2 className="max-w-xl font-display text-5xl font-normal leading-[1.1] tracking-tight text-balance sm:text-6xl lg:text-7xl">
+            Let's regenerate Bob's Cove.
+          </h2>
+        </div>
+
+        <div className="grid gap-12 sm:grid-cols-2 lg:pt-24">
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-white/50">Navigation</h3>
+            <div className="mt-2 flex flex-col gap-3">
+              {siteContent.footer.links.map((item) => (
+                <Link
+                  className="w-fit text-base text-white/80 transition-colors hover:text-white"
+                  href={item.href}
+                  key={item.href}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-white/50">Social</h3>
+            <div className="mt-2 flex flex-col gap-3">
+              {siteContent.footer.socialLinks.map((item) => (
+                <a
+                  className="w-fit text-base text-white/80 transition-colors hover:text-white"
+                  href={item.href}
+                  key={item.href}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+            <p className="mt-8 text-sm leading-relaxed text-white/50">
               {siteContent.footer.note}
             </p>
           </div>
         </div>
-
-        <div className="flex flex-wrap gap-3 lg:justify-end">
-          {siteContent.footer.links.map((item) => (
-            <Link
-              className="rounded-full border border-white/10 bg-white/8 px-4 py-3 text-sm font-semibold text-white/90 transition hover:bg-white/14 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime focus-visible:ring-offset-2 focus-visible:ring-offset-deep"
-              href={item.href}
-              key={item.href}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
+      </div>
+      <div className="shell mt-24 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-sm text-white/40 sm:flex-row sm:items-center">
+        <p>&copy; {new Date().getFullYear()} {siteContent.siteName}</p>
+        <p>{siteContent.location}</p>
       </div>
     </footer>
   );
