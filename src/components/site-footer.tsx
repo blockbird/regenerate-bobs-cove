@@ -25,6 +25,19 @@ export function SiteFooter() {
             <p className="mt-3 text-sm leading-7 text-white/60">
               {siteContent.footer.note}
             </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {siteContent.footer.socialLinks.map((item) => (
+                <a
+                  className="rounded-full border border-white/12 bg-white/8 px-4 py-3 text-sm font-semibold text-white/92 transition hover:bg-white/14 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime focus-visible:ring-offset-2 focus-visible:ring-offset-deep"
+                  href={item.href}
+                  key={item.href}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
