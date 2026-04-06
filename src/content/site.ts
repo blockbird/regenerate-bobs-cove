@@ -41,30 +41,30 @@ const socialLinks = [
 export const siteContent = {
   siteName: "Regenerate Bob's Cove",
   siteDescription:
-    "A community conservation initiative protecting birdlife and restoring habitat in Bob's Cove, New Zealand.",
-  location: "Bob's Cove, New Zealand",
+    "A community-led conservation group working to turn Bob's Cove into a thriving sanctuary for our unique taonga species.",
+  location: "Bob's Cove, Aotearoa New Zealand",
   navigation,
   socialLinks,
   footer: {
     summary:
-      "A calm, community-first place to explain the work, share updates, and make participation easy as details are confirmed.",
+      "Together, we're removing introduced predators and restoring the natural habitat of Bob's Cove to protect our precious native wildlife.",
     links: navigation,
-    note: "Facebook and Instagram are live now, and direct volunteer or contact details can be added here as the project confirms them.",
+    note: "Join our community of volunteers. Follow our progress on Facebook and Instagram as we work toward a predator-free future.",
     socialLinks,
   },
   home: {
     hero: {
-      eyebrow: "Community conservation in Bob's Cove",
-      title: "Protecting birdlife and restoring the cove, together.",
+      eyebrow: "Community-led conservation in Bob's Cove",
+      title: "Turning our cove into a sanctuary for native taonga.",
       description:
-        "Regenerate Bob's Cove is a practical local effort to care for the bush, shoreline, and birdlife around the cove through steady, community-led action.",
+        "Regenerate Bob's Cove is a 100% volunteer-run initiative dedicated to removing introduced predators, restoring ancient bushland, and bringing native birdlife back to our backyards.",
       primaryAction: {
         href: "/get-involved",
-        label: "See how to help",
+        label: "Join the mahi",
       },
       secondaryAction: {
         href: "#work",
-        label: "Explore the work",
+        label: "Discover our vision",
         variant: "secondary" as const,
       },
       image: {
@@ -72,9 +72,9 @@ export const siteContent = {
         alt: "Aerial view across the turquoise water and shoreline of Bob's Cove.",
       },
       focusAreas: [
-        "Bird protection",
-        "Trap lines and monitoring",
-        "Neighbour-led care",
+        "Predator-free trapping",
+        "Biodiversity restoration",
+        "Community kaitiakitanga",
       ],
       brandPanel: {
         title: "From the bushline to the bay.",
@@ -97,64 +97,64 @@ export const siteContent = {
       ],
     },
     why: {
-      eyebrow: "Why it matters",
-      title: "A cove where shoreline, forest, and community all meet.",
+      eyebrow: "Our vision",
+      title: "A thriving ecosystem where forest and community meet.",
       description:
-        "Bob's Cove matters as a place people know and use. That closeness makes restoration feel tangible, shared, and worth sustaining over time.",
+        "We have a difference worth defending. Our kanuka-clad hills, the regenerating forest on the shores of the lake, and our native species—many of which aren't found anywhere else on earth. This uniqueness is what drives us to join New Zealand's ambitious goal of Predator Free 2050.",
       image: {
         src: "/images/coveview.jpg",
         alt: "Lake edge and forested hillside meeting at Bob's Cove.",
       },
       points: [
         {
-          title: "A rare meeting of water, bush, and homes",
+          title: "A rare biodiversity hotspot",
           description:
-            "The cove brings together lake edge, regenerating habitat, walking routes, and nearby residents in one visible landscape.",
+            "Bob's Cove brings together lake edge, ancient Podocarp trees, and residential areas in one visible landscape. It takes every patch to make a paradise.",
         },
         {
-          title: "Birdlife is part of everyday experience",
+          title: "Protecting our taonga species",
           description:
-            "When native birds return, the change is not abstract. It is heard, noticed, and shared by people who spend time here.",
+            "When we rid our neighbourhoods of introduced pests like rats, stoats, and possums, native birds, lizards, and invertebrates can safely return and thrive.",
         },
         {
-          title: "Local care makes long work possible",
+          title: "100% community-powered mahi",
           description:
-            "Steady practical effort, not distant promises, is what keeps restoration grounded and durable.",
+            "Our success relies entirely on dedicated local volunteers managing trap lines on public and private land. Every trap brings us one step closer to our goal.",
         },
       ],
-      note: "Healthy habitat here depends on regular local care, clear communication, and patience.",
+      note: "By taking practical, everyday action, we are ensuring this incredible environment is preserved for future generations.",
     },
     birds: {
-      eyebrow: "Birdlife",
-      title: "Birds that make the work feel real.",
+      eyebrow: "Native wildlife",
+      title: "The taonga we are working to protect.",
       description:
-        "Native birdlife gives people a direct reason to care. The site can use familiar species to make conservation feel immediate and local.",
+        "Introduced predators pose an existential threat to our native species. By maintaining our trapping networks, we are directly contributing to the survival of these incredible birds.",
       species: [
         {
-          name: "Tui",
+          name: "Tūī",
           summary:
-            "A strong ambassador for the cove's soundscape and a familiar sign that habitat quality matters.",
-          note: "Seen as a flagship species for lively, healthy bush edges.",
+            "A strong ambassador for the cove's soundscape and a familiar sign that our pest-control efforts are working.",
+          note: "Vital for pollinating native trees and dispersing seeds across the regenerating forest.",
           image: {
             src: "/images/tui.jpg",
             alt: "Tui perched among bright green leaves.",
           },
         },
         {
-          name: "Bellbird",
+          name: "Korimako (Bellbird)",
           summary:
-            "A native bird that helps connect people to the quieter, everyday experience of a recovering place.",
-          note: "Works well in sections about listening for change, not just seeing it.",
+            "Their iconic, bell-like song is becoming a more common part of the everyday experience in the cove.",
+          note: "A key indicator species for the overall health of our local ecosystem.",
           image: {
             src: "/images/bellbird.jpg",
             alt: "Bellbird perched on a branch with green foliage behind it.",
           },
         },
         {
-          name: "Robin",
+          name: "Toutouwai (Robin)",
           summary:
-            "An intimate, close-up species image that brings warmth and personality into the story of the work.",
-          note: "Useful for updates, story previews, and welcoming first-time visitors.",
+            "Friendly and inquisitive, these birds are highly vulnerable to ground predators like rats and stoats.",
+          note: "Removing predators is the only way to ensure their populations can safely recover.",
           image: {
             src: "/images/robin.JPEG",
             alt: "New Zealand robin standing upright on a branch.",
@@ -163,26 +163,26 @@ export const siteContent = {
       ],
     },
     work: {
-      eyebrow: "Practical work",
-      title: "Practical work, shared locally.",
+      eyebrow: "On the ground",
+      title: "Practical conservation, driven by locals.",
       description:
-        "The conservation story should feel active and real: regular checks, walking routes, gear in the field, and people caring for the place over time.",
+        "Our work is active, measurable, and deeply connected to the land. We operate a growing network of traps across the region to systematically remove threats to our wildlife.",
       features: [
         {
-          kicker: "Field work",
-          title: "Trap lines and practical protection",
+          kicker: "Predator control",
+          title: "Managing the trap lines",
           summary:
-            "Routine checks, maintaining gear, and keeping practical systems working quietly in the background are a visible part of the effort.",
+            "Our volunteers conduct routine checks, maintain equipment, and clear traps across public reserves and private properties to suppress possum, rat, and mustelid populations.",
           image: {
             src: "/images/trap2.jpeg",
             alt: "Trap equipment sitting among native plants and undergrowth.",
           },
         },
         {
-          kicker: "On the ground",
-          title: "Monitoring, walking routes, and local stewardship",
+          kicker: "Community stewardship",
+          title: "Education and engagement",
           summary:
-            "Observing changes, returning often, and making the work legible to neighbours helps conservation stay grounded in place.",
+            "We believe in sharing knowledge. By educating our community about native biodiversity and predator control, we empower residents to proactively manage their own backyards.",
           image: {
             src: "/images/trap4.JPEG",
             alt: "Person carrying field gear while walking through grassy terrain near the cove.",
@@ -190,37 +190,37 @@ export const siteContent = {
         },
       ],
       emphasis: {
-        title: "The work is bigger than one tool.",
+        title: "Every trap makes a difference.",
         description:
-          "A strong site should frame the project as a rhythm of practical tasks, local relationships, and long-term care rather than one-off interventions.",
+          "Achieving a predator-free Bob's Cove requires a landscape-scale effort. It's about a rhythm of practical tasks, strong local relationships, and a shared commitment to the environment.",
         image: {
           src: "/images/picnicpoint.jpg",
           alt: "High view looking across the cove's bright water and bush-covered shoreline.",
         },
         principles: [
           {
-            title: "Regular presence",
+            title: "Consistent mahi",
             description:
-              "Returning often matters. It keeps the work visible, maintainable, and connected to real conditions on the ground.",
+              "Conservation isn't a one-off event. Regular trap checking and maintenance keeps predator numbers suppressed so native populations can recover.",
           },
           {
-            title: "Welcoming entry points",
+            title: "Accessible involvement",
             description:
-              "People should be able to imagine how they could join in, learn the basics, and build confidence over time.",
+              "You don't need to be an expert to help. We provide the tools, training, and support to get you started on your own property or on our community lines.",
           },
           {
-            title: "Place-led decisions",
+            title: "Data-driven results",
             description:
-              "The cove itself should guide the tone of the project: calm, observant, and led by what the landscape needs.",
+              "We track every catch to understand predator patterns and measure the tangible impact our volunteers are making on the local ecosystem.",
           },
         ],
       },
     },
     landscape: {
-      eyebrow: "Landscape",
-      title: "Landscape is part of the story.",
+      eyebrow: "Our environment",
+      title: "A landscape worth defending.",
       description:
-        "The strongest moments on the site should come from photography that lets the place do the talking.",
+        "From the towering alpine ridges to the Kanuka-clad shoreline, Bob's Cove is an irreplaceable slice of Aotearoa.",
       gallery: [
         {
           src: "/images/covesunrise.JPEG",
@@ -250,50 +250,50 @@ export const siteContent = {
     },
     join: {
       eyebrow: "Get involved",
-      title: "There is a place for you in the work.",
+      title: "We need your help to protect the cove.",
       description:
-        "Whether you live nearby or simply care about Bob's Cove, the project needs people who are willing to show up, learn, and stay connected.",
+        "Scaling up our trapping network requires people power. Whether you can check a single trap in your backyard or maintain a line in the reserve, your contribution is vital to our success.",
       actions: [
         {
           href: "/get-involved",
-          label: "Volunteer",
+          label: "Become a volunteer",
           variant: "light" as const,
         },
         {
           href: "/contact",
-          label: "Stay in touch",
+          label: "Contact the team",
           variant: "ghost" as const,
         },
       ],
       steps: [
         {
-          title: "Join a local field day",
+          title: "Start trapping in your backyard",
           description:
-            "Use this space to share working bees, beginner-friendly volunteer days, and practical opportunities to help on site.",
+            "Backyard trapping is the foundation of a predator-free community. We can help you source the right trap and show you how to use it safely.",
         },
         {
-          title: "Follow the project story",
+          title: "Join a community trap line",
           description:
-            "Updates, photos, and short field notes can help people stay connected between hands-on days.",
+            "Volunteer to walk one of our established lines through the local reserves. It's a great way to get outdoors, stay fit, and protect nature.",
         },
         {
-          title: "Support the practical work",
+          title: "Support our funding efforts",
           description:
-            "Once support links are confirmed, this section is ready for low-friction ways to contribute time, tools, or funds.",
+            "If you don't have the time to trap, your donations help us purchase new traps, bait, and equipment to expand our network.",
         },
       ],
     },
     stories: {
-      eyebrow: "Stories",
-      title: "A simple way to keep the project alive between field days.",
+      eyebrow: "Updates & Insights",
+      title: "Dispatches from the trap lines.",
       description:
-        "Storytelling does not need to be elaborate. Short updates, bird sightings, and field notes can keep the work visible and welcoming.",
+        "Read the latest field notes from our volunteers, track our predator catch numbers, and learn more about the native species we are protecting.",
       cards: [
         {
           meta: "Field note",
-          title: "Trail notes from the bushline",
+          title: "Spring brings new life to the bushline",
           summary:
-            "Short reflections from track walks can help neighbours and supporters understand the seasonal rhythm of the place.",
+            "As the weather warms, our volunteers have noted a significant increase in native bird activity following our winter trapping push.",
           href: "/stories",
           image: {
             src: "/images/covesunrise.JPEG",
@@ -302,9 +302,9 @@ export const siteContent = {
         },
         {
           meta: "How it works",
-          title: "Why routine checks matter",
+          title: "Choosing the right trap for your property",
           summary:
-            "Practical explanations make the work easier to trust and easier for newcomers to imagine joining.",
+            "Understanding the difference between rat, stoat, and possum traps is crucial for effective backyard pest control. Here is what you need to know.",
           href: "/stories",
           image: {
             src: "/images/trap4.JPEG",
@@ -312,10 +312,10 @@ export const siteContent = {
           },
         },
         {
-          meta: "Birdlife",
-          title: "Moments that keep people involved",
+          meta: "Biodiversity",
+          title: "Spotlight on the Toutouwai (Robin)",
           summary:
-            "Bird photography and small signs of change are a natural fit for updates, social posts, and homepage previews.",
+            "These friendly forest dwellers rely entirely on our continued trapping efforts to protect their vulnerable nests from stoats and rats.",
           href: "/stories",
           image: {
             src: "/images/robin.JPEG",
@@ -328,59 +328,62 @@ export const siteContent = {
   pages: {
     why: {
       eyebrow: "Why Bob's Cove matters",
-      title: "Why this place is worth caring for, slowly and well.",
+      title: "Why this place is worth defending, trap by trap.",
       description:
-        "Bob's Cove brings together shoreline, bush, homes, and public access in one landscape. That closeness makes habitat care visible, shared, and worth doing carefully.",
+        "Bob's Cove is a unique convergence of pristine water, ancient podocarp forest, and community. This proximity makes conservation highly visible and relies entirely on our shared commitment as kaitiaki (guardians) of the land.",
       image: {
         src: "/images/hero2.jpg",
         alt: "Wide view of Bob's Cove showing the lake, bush, and nearby settlement.",
       },
       sections: [
         {
-          title: "A place where edges meet",
+          title: "A vital biodiversity hotspot",
+          description: "Protecting our native species.",
           body: [
-            "Bob's Cove is not a remote conservation story. It is a place where water, bush, tracks, homes, and visitors all sit close together.",
-            "That mix gives the site a practical role: help people understand why habitat protection matters in a place they can see, hear, and revisit easily.",
+            "Bob's Cove isn't just a scenic backdrop; it is a critical habitat for native birds, lizards, and invertebrates. The kanuka-clad hills and dense beech forests offer refuge to species that are highly vulnerable to introduced predators.",
+            "By establishing a robust trapping network here, we aren't just saving individual animals—we are restoring the entire ecosystem's natural balance and contributing to the national Predator Free 2050 initiative.",
           ],
         },
         {
-          title: "Care feels real when it stays local",
+          title: "Conservation driven by community",
+          description: "100% volunteer-led action.",
           body: [
-            "Field work, monitoring, and regular presence help conservation feel grounded rather than abstract.",
-            "When the work is visible and welcoming, more people can understand how they might contribute over time.",
+            "The success of Regenerate Bob's Cove proves that meaningful environmental change doesn't rely solely on government agencies. It is powered by locals who care deeply about their backyards.",
+            "Our volunteers are out in all weather, walking the trap lines, recording data, and clearing pests. This steady, practical mahi (work) is what makes long-term recovery possible.",
           ],
         },
         {
-          title: "Recovery works on a long rhythm",
+          title: "A long-term commitment",
+          description: "Patience and persistence.",
           body: [
-            "This project does not need hype. It needs patient storytelling, repeat visits, and practical decisions shaped by the place itself.",
-            "The goal of this page is to make that rhythm legible without overclaiming outcomes that have not been verified yet.",
+            "Removing predators from a landscape is an ongoing mission. It requires patience, consistency, and a deep respect for the rhythms of nature.",
+            "We are committed to this place for the long haul, knowing that every rat, stoat, or possum removed is a victory for the native species that belong here.",
           ],
         },
       ],
       cards: [
         {
-          title: "Shoreline and bush",
+          title: "Forest and lake ecosystems",
           description:
-            "The meeting of water and forest gives the cove a visual identity that should stay central to the site.",
+            "The intersection of deep water and regenerating native bush creates a highly diverse environment that requires active protection.",
           image: {
             src: "/images/coveview.jpg",
             alt: "Slope of native bush descending toward bright blue water.",
           },
         },
         {
-          title: "Bird habitat",
+          title: "Vulnerable birdlife",
           description:
-            "Birdlife makes restoration tangible and helps connect ecological work to everyday local experience.",
+            "Without active trapping, ground-nesting and forest birds face constant threats from stoats, ferrets, and rats.",
           image: {
             src: "/images/tui.jpg",
             alt: "Tui resting on a branch framed by green leaves.",
           },
         },
         {
-          title: "Shared stewardship",
+          title: "Our volunteers",
           description:
-            "People are part of the story here, so the site should always point back to practical ways of participating.",
+            "The dedication of our local trapping coordinators and backyard trappers is the engine driving this conservation success.",
           image: {
             src: "/images/trap4.JPEG",
             alt: "Volunteer with field gear standing in open grass with hills beyond.",
@@ -389,77 +392,77 @@ export const siteContent = {
       ],
     },
     getInvolved: {
-      eyebrow: "Get involved",
-      title: "Ways to help, even while more project details are still being confirmed.",
+      eyebrow: "Take action",
+      title: "Help us build a predator-free sanctuary.",
       description:
-        "This page creates clear space for volunteering, neighbour support, and project updates without inventing dates or links that have not been confirmed yet.",
+        "Every trap counts. Whether you have a small backyard or want to volunteer on our public reserve lines, there is a critical role for you to play in protecting Bob's Cove.",
       image: {
         src: "/images/trap4.JPEG",
         alt: "Volunteer walking through the landscape carrying practical field gear.",
       },
       opportunities: [
         {
-          title: "Join a volunteer day",
+          title: "Backyard Trapping",
           description:
-            "Use this slot for working bees, track-side tasks, and beginner-friendly ways to learn the practical side of the project.",
+            "The easiest way to start. We can provide advice on selecting, placing, and safely operating traps to protect the birds visiting your own garden.",
         },
         {
-          title: "Support the project locally",
+          title: "Join a Reserve Trap Line",
           description:
-            "Neighbour support might include sharing the story, helping with logistics, or backing the work once support channels are confirmed.",
+            "Become part of our coordinated network. We'll assign you to a team, provide training, and get you walking one of our established trap lines.",
         },
         {
-          title: "Stay connected between field days",
+          title: "Donate to the Trust",
           description:
-            "Updates, photos, and simple email or social sign-ups can keep people involved even when they cannot be on site.",
+            "Purchasing high-quality, humane traps and bait is expensive. Your financial support allows us to rapidly expand our predator-control network.",
         },
       ],
-      note: "Specific dates, sign-up links, and support details can be dropped into this page as soon as they are ready.",
+      note: "We hold regular trapping workshops and community working bees. Reach out to get notified of our next induction session.",
       actions: [
         {
           href: "/stories",
-          label: "See the story format",
+          label: "Read our field updates",
           variant: "secondary" as const,
         },
         {
           href: "/contact",
-          label: "Go to contact page",
+          label: "Contact us to start",
           variant: "ghost" as const,
         },
       ],
     },
     stories: {
-      eyebrow: "Stories",
-      title: "Updates, field notes, and small signs of progress.",
+      eyebrow: "Field Notes",
+      title: "News, updates, and catches from the trap lines.",
       description:
-        "The stories page is ready for short, regular posts that keep the work visible without needing a heavy publishing workflow in v1.",
+        "Follow our progress as we work to clear predators from the cove, and read insights from our volunteers working on the ground.",
       image: {
         src: "/images/covesunrise.JPEG",
         alt: "Sunrise over Bob's Cove with the water glowing under the hills.",
       },
       formats: [
         {
-          title: "Trail notes",
+          title: "Trapping Milestones",
           description:
-            "Brief observations from track walks or check-ins that help people notice the changing rhythm of the place.",
+            "Updates on our catch numbers, new trap line expansions, and overall impact on predator suppression.",
         },
         {
-          title: "Practical explainers",
+          title: "Educational Resources",
           description:
-            "Short stories about how the work happens and why routine care matters can make conservation easier to understand.",
+            "Tips, tricks, and best practices for setting traps, using different baits, and recording your catch data safely.",
         },
         {
-          title: "Bird moments",
+          title: "Wildlife Sightings",
           description:
-            "Bird photography and small encounters are an approachable way to keep updates human, specific, and hopeful.",
+            "The ultimate reward for our hard work. We love sharing photos and stories of the native birds returning to the area.",
         },
       ],
       cards: [
         {
-          meta: "Placeholder story",
-          title: "Trail notes from the bushline",
+          meta: "Update",
+          title: "Expanding our network into the western bush",
           summary:
-            "A simple template for sharing what the cove felt like on a given walk, with one image and a few grounded observations.",
+            "Thanks to a new wave of volunteers, we've successfully laid out 20 new traps targeting a known stoat corridor.",
           href: "/stories",
           image: {
             src: "/images/covesunrise.JPEG",
@@ -467,10 +470,10 @@ export const siteContent = {
           },
         },
         {
-          meta: "Placeholder story",
-          title: "Why routine checks matter",
+          meta: "Education",
+          title: "Why clearing and recording your traps matters",
           summary:
-            "A concise explainer that helps new visitors understand the practical work without leaning on jargon or inflated claims.",
+            "A quick guide on why consistent maintenance and logging your catches on Trap.NZ is vital for our landscape-scale strategy.",
           href: "/stories",
           image: {
             src: "/images/trap2.jpeg",
@@ -478,10 +481,10 @@ export const siteContent = {
           },
         },
         {
-          meta: "Placeholder story",
-          title: "Moments that keep people involved",
+          meta: "Wildlife",
+          title: "Bellbird numbers on the rise",
           summary:
-            "A photo-led update format that can hold bird sightings, seasonal shifts, or a memorable moment from the field.",
+            "Recent acoustic surveys and volunteer sightings point to a strong breeding season for our local Korimako population.",
           href: "/stories",
           image: {
             src: "/images/bellbird.jpg",
@@ -489,48 +492,48 @@ export const siteContent = {
           },
         },
       ],
-      note: "This archive can launch with just a few hand-curated updates, then grow only if the team wants a more regular publishing rhythm.",
+      note: "Join our mailing list to get these updates delivered directly to your inbox.",
     },
     contact: {
-      eyebrow: "Contact",
-      title: "A simple contact page for the next phase of the project.",
+      eyebrow: "Get in touch",
+      title: "Connect with the Regenerate Bob's Cove team.",
       description:
-        "This page now points people to the project's live social channels while preferred direct contact details and volunteer pathways are still being confirmed.",
+        "Ready to get a trap for your backyard, or want to join one of our community lines? Reach out through our social channels or email, and our volunteer coordinators will get you set up.",
       image: {
         src: "/images/jetty.JPG",
         alt: "Jetty reaching out over calm lake water at Bob's Cove.",
       },
       channels: [
         {
-          title: "General enquiries",
-          status: "Details to be confirmed",
+          title: "Volunteer Coordination",
+          status: "Always looking for help",
           description:
-            "Add the project's preferred email or contact form here once the team decides what should be public.",
+            "If you want to get active on the ground, let us know. We'll pair you with an experienced trapper to learn the ropes.",
         },
         {
-          title: "Volunteer interest",
-          status: "Ready for a sign-up link",
+          title: "Backyard Trapping Support",
+          status: "Advice available",
           description:
-            "This card is ready for a volunteer expression-of-interest form or a simple message-based contact route.",
+            "Unsure which trap to buy or where to place it? We can provide expert advice to make your backyard predator-free.",
         },
         {
-          title: "Project updates",
-          status: "Live on social media",
+          title: "General Enquiries",
+          status: "Connect online",
           description:
-            "Facebook and Instagram are ready to carry updates right away, giving people a simple place to follow along.",
+            "Follow our journey, ask questions, and interact with the community directly through our Facebook and Instagram pages.",
         },
       ],
-      note: "Until more direct contact details are confirmed, these social links give people a reliable way to follow the project and stay connected.",
+      note: "As a 100% volunteer-run group, we might take a couple of days to respond, but we are thrilled you want to help protect the cove.",
       socialLinks,
       actions: [
         {
           href: "/get-involved",
-          label: "See ways to help",
+          label: "Learn about volunteering",
           variant: "secondary" as const,
         },
         {
           href: "/stories",
-          label: "Explore story ideas",
+          label: "Read our latest news",
           variant: "ghost" as const,
         },
       ],
