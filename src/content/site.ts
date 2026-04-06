@@ -55,12 +55,12 @@ export const siteContent = {
   home: {
     hero: {
       eyebrow: "Community-led conservation in Bob's Cove",
-      title: "Turning our cove into a sanctuary for native taonga.",
+      title: "Regenerating Bob's Cove into a true native sanctuary.",
       description:
         "Regenerate Bob's Cove is a 100% volunteer-run initiative dedicated to removing introduced predators, restoring ancient bushland, and bringing native birdlife back to our backyards.",
       primaryAction: {
         href: "/get-involved",
-        label: "Join the mahi",
+        label: "Join us",
       },
       secondaryAction: {
         href: "#work",
@@ -100,7 +100,7 @@ export const siteContent = {
       eyebrow: "Our vision",
       title: "A thriving ecosystem where forest and community meet.",
       description:
-        "We have a difference worth defending. Our kanuka-clad hills, the regenerating forest on the shores of the lake, and our native species—many of which aren't found anywhere else on earth. This uniqueness is what drives us to join New Zealand's ambitious goal of Predator Free 2050.",
+        "We have a difference worth defending. Our beech-clad slopes and shores are one of the best preserved native environments in the Wakatipu basin. The natural perimeter of lake shore, sub-alpine ridge line and the cliffs of the narrows give us a unique opportunity to defend from predators.",
       image: {
         src: "/images/coveview.jpg",
         alt: "Lake edge and forested hillside meeting at Bob's Cove.",
@@ -109,12 +109,12 @@ export const siteContent = {
         {
           title: "A rare biodiversity hotspot",
           description:
-            "Bob's Cove brings together lake edge, ancient Podocarp trees, and residential areas in one visible landscape. It takes every patch to make a paradise.",
+            "Bob's Cove brings together lake edge, ancient beech trees, and residential areas in one visible landscape. Whether on the porch with a cuppa, standing high on the ridge, or sunbathing on the beach, nature here is ever-present.",
         },
         {
           title: "Protecting our taonga species",
           description:
-            "When we rid our neighbourhoods of introduced pests like rats, stoats, and possums, native birds, lizards, and invertebrates can safely return and thrive.",
+            "When we rid our neighbourhoods of introduced pests like rats, stoats, feral cats and possums, then our native birds, lizards, and invertebrates will truly thrive.",
         },
         {
           title: "100% community-powered mahi",
@@ -141,16 +141,6 @@ export const siteContent = {
           },
         },
         {
-          name: "Korimako (Bellbird)",
-          summary:
-            "Their iconic, bell-like song is becoming a more common part of the everyday experience in the cove.",
-          note: "A key indicator species for the overall health of our local ecosystem.",
-          image: {
-            src: "/images/bellbird.jpg",
-            alt: "Bellbird perched on a branch with green foliage behind it.",
-          },
-        },
-        {
           name: "Toutouwai (Robin)",
           summary:
             "Friendly and inquisitive, these birds are highly vulnerable to ground predators like rats and stoats.",
@@ -158,6 +148,16 @@ export const siteContent = {
           image: {
             src: "/images/robin.JPEG",
             alt: "New Zealand robin standing upright on a branch.",
+          },
+        },
+        {
+          name: "Korimako (Bellbird)",
+          summary:
+            "Their iconic, bell-like song is becoming a more common part of the everyday experience in the cove.",
+          note: "A key indicator species for the overall health of our local ecosystem.",
+          image: {
+            src: "/images/bellbird.jpg",
+            alt: "Bellbird perched on a branch with green foliage behind it.",
           },
         },
       ],
@@ -199,7 +199,7 @@ export const siteContent = {
         },
         principles: [
           {
-            title: "Consistent mahi",
+            title: "Consistent work",
             description:
               "Conservation isn't a one-off event. Regular trap checking and maintenance keeps predator numbers suppressed so native populations can recover.",
           },
@@ -220,31 +220,13 @@ export const siteContent = {
       eyebrow: "Our environment",
       title: "A landscape worth defending.",
       description:
-        "From the towering alpine ridges to the Kanuka-clad shoreline, Bob's Cove is an irreplaceable slice of Aotearoa.",
+        "From towering alpine ridges to the beech-clad shoreline, Bob's Cove is an irreplaceable slice of Aotearoa.",
       gallery: [
         {
           src: "/images/covesunrise.JPEG",
           alt: "Sunrise light over the hills and water at Bob's Cove.",
           caption: "Early light gives the cove a quiet, hopeful mood.",
-          shape: "wide",
-        },
-        {
-          src: "/images/jetty.JPG",
-          alt: "Jetty extending into still water with hills in the distance.",
-          caption: "The lake edge is where many people first connect with the place.",
-          shape: "square",
-        },
-        {
-          src: "/images/hero2.jpg",
-          alt: "Wide scenic view of the cove and surrounding bush.",
-          caption: "Broad landscape views help explain why the place matters.",
-          shape: "tall",
-        },
-        {
-          src: "/images/coveview.jpg",
-          alt: "Turquoise shoreline below a steep bush-covered slope.",
-          caption: "Water colour and bushline are key parts of the identity.",
-          shape: "wide",
+          shape: "full",
         },
       ],
     },
