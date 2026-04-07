@@ -54,7 +54,7 @@ export const siteContent = {
   home: {
     hero: {
       eyebrow: "Community-led conservation in Bob's Cove",
-      title: "Restoring Bob's Cove to a true native sanctuary.",
+      title: "Restoring Bob's Cove\nto a true native\nsanctuary.",
       description:
         "Regenerate Bob's Cove is a 100% volunteer-run initiative dedicated to removing introduced predators, restoring ancient bushland, and bringing native birdlife back to our backyards.",
       primaryAction: {

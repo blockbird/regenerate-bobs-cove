@@ -38,7 +38,7 @@ export default function HomePage() {
           <span className="text-xs font-semibold uppercase tracking-widest text-white/80">
             {home.hero.eyebrow}
           </span>
-          <h1 className="mt-8 max-w-[14ch] font-display text-5xl font-normal leading-[1.05] tracking-tight text-balance sm:text-7xl lg:text-[7rem]">
+          <h1 className="mt-8 font-display text-5xl font-normal leading-[1.05] tracking-tight whitespace-pre-line sm:text-7xl lg:text-[7rem]">
             {home.hero.title}
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl">
