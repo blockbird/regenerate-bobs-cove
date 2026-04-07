@@ -380,7 +380,7 @@ export const siteContent = {
         {
           href: "/contact",
           label: "Contact us to start",
-          variant: "secondary" as const,
+          variant: "light" as const,
         },
       ],
     },
@@ -419,7 +419,7 @@ export const siteContent = {
         {
           href: "/get-involved",
           label: "Learn about volunteering",
-          variant: "secondary" as const,
+          variant: "light" as const,
         },
       ],
     },
