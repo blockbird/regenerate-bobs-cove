@@ -225,7 +225,7 @@ export const siteContent = {
         {
           src: "/images/covesunrise.JPEG",
           alt: "Sunrise light over the hills and water at Bob's Cove.",
-          caption: "Early light gives the cove a quiet, hopeful mood.",
+          caption: "Bob's Cove and Lake Wakatipu from Jessie Peak",
           shape: "full",
         },
       ],
