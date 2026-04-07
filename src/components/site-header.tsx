@@ -12,15 +12,15 @@ export function SiteHeader() {
           href="/"
         >
           <Image
-            alt="Regenerate Bob's Cove logo"
-            className="h-10 w-10 rounded-full transition-transform duration-500 group-hover:scale-105"
-            height={40}
+            alt="Regenerate Bobs Cove logo"
+            className="h-14 w-14 rounded-full transition-transform duration-500 group-hover:scale-105"
+            height={56}
             priority
             src="/brand/logo-notext.png"
-            width={40}
+            width={56}
           />
-          <div>
-            <strong className="block font-['DIN_Condensed',sans-serif] text-2xl font-bold tracking-tight text-white uppercase mt-0.5">
+          <div className="flex items-center">
+            <strong className="block font-['DIN_Condensed',sans-serif] text-2xl font-bold tracking-tight text-white uppercase leading-none">
               {siteContent.siteName}
             </strong>
           </div>

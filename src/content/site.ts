@@ -38,7 +38,7 @@ const socialLinks = [
 ] satisfies readonly SocialLink[];
 
 export const siteContent = {
-  siteName: "Regenerate Bob's Cove",
+  siteName: "Regenerate Bobs Cove",
   siteDescription:
     "A community-led conservation group working to turn Bob's Cove into a thriving sanctuary for our unique taonga species.",
   location: "Bob's Cove, Aotearoa New Zealand",
