@@ -9,6 +9,7 @@ const tileSpans = {
   square: "md:col-span-4",
   tall: "md:col-span-4 md:row-span-2",
   wide: "md:col-span-8",
+  half: "md:col-span-6",
   full: "md:col-span-12",
 } as const;
 
@@ -234,7 +235,7 @@ export default function HomePage() {
                 className={[
                   "group relative overflow-hidden rounded-xl bg-black/5",
                   tileSpans[item.shape],
-                  (item.shape as string) === "tall" ? "min-h-[40rem]" : (item.shape as string) === "full" ? "aspect-[4/3]" : "min-h-[24rem]",
+                  (item.shape as string) === "tall" ? "min-h-[40rem]" : (item.shape as string) === "full" ? "aspect-[4/3]" : (item.shape as string) === "half" ? "aspect-square" : "min-h-[24rem]",
                 ].join(" ")}
                 key={item.src}
               >

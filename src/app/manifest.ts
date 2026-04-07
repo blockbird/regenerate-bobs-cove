@@ -15,7 +15,7 @@ export default function manifest(): MetadataRoute.Manifest {
       },
     ],
     name: siteContent.siteName,
-    short_name: "Bob's Cove",
+    short_name: "Bobs Cove",
     start_url: "/",
     theme_color: "#045459",
   };

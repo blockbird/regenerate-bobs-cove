@@ -19,7 +19,7 @@ export type SocialLink = {
 
 const navigation = [
   { href: "/", label: "Home" },
-  { href: "/why-bobs-cove-matters", label: "Why Bob's Cove Matters" },
+  { href: "/why-bobs-cove-matters", label: "Why Bobs Cove Matters" },
   { href: "/get-involved", label: "Volunteer" },
   { href: "/contact", label: "Contact" },
 ];
@@ -40,23 +40,23 @@ const socialLinks = [
 export const siteContent = {
   siteName: "Regenerate Bobs Cove",
   siteDescription:
-    "A community-led conservation group working to turn Bob's Cove into a thriving sanctuary for our unique taonga species.",
-  location: "Bob's Cove, Aotearoa New Zealand",
+    "A community-led conservation group working to turn Bobs Cove into a thriving sanctuary for our unique taonga species.",
+  location: "Bobs Cove, Aotearoa New Zealand",
   navigation,
   socialLinks,
   footer: {
     summary:
-      "Together, we're removing introduced predators and restoring the natural habitat of Bob's Cove to protect our precious native wildlife.",
+      "Together, we're removing introduced predators and restoring the natural habitat of Bobs Cove to protect our precious native wildlife.",
     links: navigation,
     note: "Join our community of volunteers. Follow our progress on Facebook and Instagram as we work toward a predator-free future.",
     socialLinks,
   },
   home: {
     hero: {
-      eyebrow: "Community-led conservation in Bob's Cove",
-      title: "Restoring Bob's Cove\nto a true native\nsanctuary.",
+      eyebrow: "Community-led conservation in Bobs Cove",
+      title: "Restoring Bobs Cove\nto a true native\nsanctuary.",
       description:
-        "Regenerate Bob's Cove is a 100% volunteer-run initiative dedicated to removing introduced predators, restoring ancient bushland, and bringing native birdlife back to our backyards.",
+        "Regenerate Bobs Cove is a 100% volunteer-run initiative dedicated to removing introduced predators, restoring ancient bushland, and bringing native birdlife back to our backyards.",
       primaryAction: {
         href: "/get-involved",
         label: "Join us",
@@ -68,7 +68,7 @@ export const siteContent = {
       },
       image: {
         src: "/images/hero2.jpg",
-        alt: "Aerial view across the turquoise water and shoreline of Bob's Cove.",
+        alt: "Aerial view across the turquoise water and shoreline of Bobs Cove.",
       },
       focusAreas: [
         "Predator-free trapping",
@@ -80,17 +80,17 @@ export const siteContent = {
         description:
           "The site should feel rooted in place: practical, welcoming, and led by the landscape as much as the copy.",
         logo: "/brand/RBCBOX.png",
-        logoAlt: "Regenerate Bob's Cove logo.",
+        logoAlt: "Regenerate Bobs Cove logo.",
       },
       visuals: [
         {
           src: "/images/hero2.jpg",
-          alt: "Wide view across Bob's Cove showing bush, water, and nearby homes.",
+          alt: "Wide view across Bobs Cove showing bush, water, and nearby homes.",
           caption: "A living cove with habitat, homes, and daily stewardship all close together.",
         },
         {
           src: "/images/jetty.JPG",
-          alt: "Jetty reaching into the lake at Bob's Cove in soft evening light.",
+          alt: "Jetty reaching into the lake at Bobs Cove in soft evening light.",
           caption: "The shoreline is part of how people experience and care for the place.",
         },
       ],
@@ -102,13 +102,13 @@ export const siteContent = {
         "We have a difference worth defending. Our beech-clad slopes and shores are one of the best preserved native environments in the Wakatipu basin. The natural perimeter of lake shore, sub-alpine ridge line and the cliffs of the narrows give us a unique opportunity to defend from predators.",
       image: {
         src: "/images/coveview.jpg",
-        alt: "Lake edge and forested hillside meeting at Bob's Cove.",
+        alt: "Lake edge and forested hillside meeting at Bobs Cove.",
       },
       points: [
         {
           title: "A rare biodiversity hotspot",
           description:
-            "Bob's Cove brings together lake edge, ancient beech trees, and residential areas in one visible landscape. Whether on the porch with a cuppa, standing high on the ridge, or sunbathing on the beach, nature here is ever-present.",
+            "Bobs Cove brings together lake edge, ancient beech trees, and residential areas in one visible landscape. Whether on the porch with a cuppa, standing high on the ridge, or sunbathing on the beach, nature here is ever-present.",
         },
         {
           title: "Protecting our taonga species",
@@ -191,7 +191,7 @@ export const siteContent = {
       emphasis: {
         title: "Every trap makes a difference.",
         description:
-          "Achieving a predator-free Bob's Cove requires a landscape-scale effort. It's about a rhythm of practical tasks, strong local relationships, and a shared commitment to the environment.",
+          "Achieving a predator-free Bobs Cove requires a landscape-scale effort. It's about a rhythm of practical tasks, strong local relationships, and a shared commitment to the environment.",
         image: {
           src: "/images/picnicpoint.jpg",
           alt: "High view looking across the cove's bright water and bush-covered shoreline.",
@@ -219,13 +219,31 @@ export const siteContent = {
       eyebrow: "Our environment",
       title: "A landscape worth defending.",
       description:
-        "From towering alpine ridges to the beech-clad shoreline, Bob's Cove is an irreplaceable slice of Aotearoa.",
+        "From towering alpine ridges to the beech-clad shoreline, Bobs Cove is an irreplaceable slice of Aotearoa.",
       gallery: [
         {
           src: "/images/covesunrise.JPEG",
-          alt: "Sunrise light over the hills and water at Bob's Cove.",
-          caption: "Bob's Cove and Lake Wakatipu from Jessie Peak",
-          shape: "full",
+          alt: "Sunrise light over the hills and water at Bobs Cove.",
+          caption: "Bobs Cove and Lake Wakatipu from Jessie Peak",
+          shape: "half",
+        },
+        {
+          src: "/images/covesunset.png",
+          alt: "Sunset light over Bobs Cove.",
+          caption: "Evening light settling over the cove",
+          shape: "half",
+        },
+        {
+          src: "/images/picnicpoint.png",
+          alt: "Clear blue water at Bobs Cove.",
+          caption: "Pristine waters of the Wakatipu basin",
+          shape: "half",
+        },
+        {
+          src: "/images/jetty.png",
+          alt: "Jetty at Bobs Cove.",
+          caption: "The historic jetty stretching into the lake",
+          shape: "half",
         },
       ],
     },
@@ -267,20 +285,20 @@ export const siteContent = {
   },
   pages: {
     why: {
-      eyebrow: "Why Bob's Cove matters",
+      eyebrow: "Why Bobs Cove matters",
       title: "Why this place is worth defending, trap by trap.",
       description:
-        "Bob's Cove is a unique convergence of pristine water, ancient podocarp forest, and community. This proximity makes conservation highly visible and relies entirely on our shared commitment as kaitiaki (guardians) of the land.",
+        "Bobs Cove is a unique convergence of pristine water, ancient podocarp forest, and community. This proximity makes conservation highly visible and relies entirely on our shared commitment as kaitiaki (guardians) of the land.",
       image: {
         src: "/images/hero2.jpg",
-        alt: "Wide view of Bob's Cove showing the lake, bush, and nearby settlement.",
+        alt: "Wide view of Bobs Cove showing the lake, bush, and nearby settlement.",
       },
       sections: [
         {
           title: "A vital biodiversity hotspot",
           description: "Protecting our native species.",
           body: [
-            "Bob's Cove isn't just a scenic backdrop; it is a critical habitat for native birds, lizards, and invertebrates. The kanuka-clad hills and dense beech forests offer refuge to species that are highly vulnerable to introduced predators.",
+            "Bobs Cove isn't just a scenic backdrop; it is a critical habitat for native birds, lizards, and invertebrates. The kanuka-clad hills and dense beech forests offer refuge to species that are highly vulnerable to introduced predators.",
             "By establishing a robust trapping network here, we aren't just saving individual animals—we are restoring the entire ecosystem's natural balance and contributing to the national Predator Free 2050 initiative.",
           ],
         },
@@ -288,7 +306,7 @@ export const siteContent = {
           title: "Conservation driven by community",
           description: "100% volunteer-led action.",
           body: [
-            "The success of Regenerate Bob's Cove proves that meaningful environmental change doesn't rely solely on government agencies. It is powered by locals who care deeply about their backyards.",
+            "The success of Regenerate Bobs Cove proves that meaningful environmental change doesn't rely solely on government agencies. It is powered by locals who care deeply about their backyards.",
             "Our volunteers are out in all weather, walking the trap lines, recording data, and clearing pests. This steady, practical mahi (work) is what makes long-term recovery possible.",
           ],
         },
@@ -335,7 +353,7 @@ export const siteContent = {
       eyebrow: "Take action",
       title: "Help us build a predator-free sanctuary.",
       description:
-        "Every trap counts. Whether you have a small backyard or want to volunteer on our public reserve lines, there is a critical role for you to play in protecting Bob's Cove.",
+        "Every trap counts. Whether you have a small backyard or want to volunteer on our public reserve lines, there is a critical role for you to play in protecting Bobs Cove.",
       image: {
         src: "/images/trap4.JPEG",
         alt: "Volunteer walking through the landscape carrying practical field gear.",
@@ -368,12 +386,12 @@ export const siteContent = {
     },
     contact: {
       eyebrow: "Get in touch",
-      title: "Connect with the Regenerate Bob's Cove team.",
+      title: "Connect with the Regenerate Bobs Cove team.",
       description:
         "Ready to get a trap for your backyard, or want to join one of our community lines? Reach out through our social channels or email, and our volunteer coordinators will get you set up.",
       image: {
         src: "/images/jetty.JPG",
-        alt: "Jetty reaching out over calm lake water at Bob's Cove.",
+        alt: "Jetty reaching out over calm lake water at Bobs Cove.",
       },
       channels: [
         {

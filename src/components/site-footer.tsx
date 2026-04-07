@@ -9,14 +9,14 @@ export function SiteFooter() {
       <div className="shell grid gap-16 lg:grid-cols-[1.5fr_1fr]">
         <div className="flex flex-col items-start gap-8">
           <Image
-            alt="Regenerate Bob's Cove logo"
+            alt="Regenerate Bobs Cove logo"
             className="h-16 w-16 rounded-full"
             height={64}
             src="/brand/logo-notext.png"
             width={64}
           />
           <h2 className="max-w-xl font-display text-5xl font-normal leading-[1.1] tracking-tight text-balance sm:text-6xl lg:text-7xl">
-            Let's regenerate Bob's Cove.
+            Let's regenerate Bobs Cove.
           </h2>
         </div>
 
