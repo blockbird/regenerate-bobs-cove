@@ -291,57 +291,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-24 sm:py-40 bg-white" id="stories">
-        <div className="shell">
-          <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
-            <SectionHeading
-              description={home.stories.description}
-              eyebrow={home.stories.eyebrow}
-              title={home.stories.title}
-            />
-            <Link
-              href="/stories"
-              className="group inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-ink transition-colors hover:text-charcoal"
-            >
-              View all stories
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </Link>
-          </div>
-
-          <div className="mt-16 grid gap-x-8 gap-y-16 md:grid-cols-3">
-            {home.stories.cards.map((story) => (
-              <article className="group flex flex-col" key={story.title}>
-                <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-black/5">
-                  <Image
-                    alt={story.image.alt}
-                    className="object-cover object-center transition duration-700 group-hover:scale-105"
-                    fill
-                    sizes="(max-width: 767px) 100vw, 33vw"
-                    src={story.image.src}
-                  />
-                </div>
-                <div className="mt-8 flex flex-1 flex-col">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-charcoal">
-                    {story.meta}
-                  </span>
-                  <h3 className="mt-3 font-display text-2xl font-normal tracking-tight text-ink">
-                    {story.title}
-                  </h3>
-                  <p className="mt-4 flex-1 text-base leading-relaxed text-charcoal">
-                    {story.summary}
-                  </p>
-                  <Link
-                    className="mt-8 inline-flex w-fit items-center gap-2 border-b border-ink/20 pb-1 text-sm font-medium text-ink transition-colors hover:border-ink"
-                    href={story.href}
-                  >
-                    Read story
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

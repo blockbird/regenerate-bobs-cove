@@ -21,7 +21,6 @@ const navigation = [
   { href: "/", label: "Home" },
   { href: "/why-bobs-cove-matters", label: "Why Bob's Cove Matters" },
   { href: "/get-involved", label: "Get Involved" },
-  { href: "/stories", label: "Stories" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -265,47 +264,6 @@ export const siteContent = {
         },
       ],
     },
-    stories: {
-      eyebrow: "Updates & Insights",
-      title: "Dispatches from the trap lines.",
-      description:
-        "Read the latest field notes from our volunteers, track our predator catch numbers, and learn more about the native species we are protecting.",
-      cards: [
-        {
-          meta: "Field note",
-          title: "Spring brings new life to the bushline",
-          summary:
-            "As the weather warms, our volunteers have noted a significant increase in native bird activity following our winter trapping push.",
-          href: "/stories",
-          image: {
-            src: "/images/covesunrise.JPEG",
-            alt: "Morning light over the water and hills at Bob's Cove.",
-          },
-        },
-        {
-          meta: "How it works",
-          title: "Choosing the right trap for your property",
-          summary:
-            "Understanding the difference between rat, stoat, and possum traps is crucial for effective backyard pest control. Here is what you need to know.",
-          href: "/stories",
-          image: {
-            src: "/images/trap4.JPEG",
-            alt: "Volunteer carrying field gear through grassland near the cove.",
-          },
-        },
-        {
-          meta: "Biodiversity",
-          title: "Spotlight on the Toutouwai (Robin)",
-          summary:
-            "These friendly forest dwellers rely entirely on our continued trapping efforts to protect their vulnerable nests from stoats and rats.",
-          href: "/stories",
-          image: {
-            src: "/images/robin.JPEG",
-            alt: "New Zealand robin perched on a branch.",
-          },
-        },
-      ],
-    },
   },
   pages: {
     why: {
@@ -402,79 +360,11 @@ export const siteContent = {
       note: "We hold regular trapping workshops and community working bees. Reach out to get notified of our next induction session.",
       actions: [
         {
-          href: "/stories",
-          label: "Read our field updates",
-          variant: "secondary" as const,
-        },
-        {
           href: "/contact",
           label: "Contact us to start",
-          variant: "ghost" as const,
+          variant: "secondary" as const,
         },
       ],
-    },
-    stories: {
-      eyebrow: "Field Notes",
-      title: "News, updates, and catches from the trap lines.",
-      description:
-        "Follow our progress as we work to clear predators from the cove, and read insights from our volunteers working on the ground.",
-      image: {
-        src: "/images/covesunrise.JPEG",
-        alt: "Sunrise over Bob's Cove with the water glowing under the hills.",
-      },
-      formats: [
-        {
-          title: "Trapping Milestones",
-          description:
-            "Updates on our catch numbers, new trap line expansions, and overall impact on predator suppression.",
-        },
-        {
-          title: "Educational Resources",
-          description:
-            "Tips, tricks, and best practices for setting traps, using different baits, and recording your catch data safely.",
-        },
-        {
-          title: "Wildlife Sightings",
-          description:
-            "The ultimate reward for our hard work. We love sharing photos and stories of the native birds returning to the area.",
-        },
-      ],
-      cards: [
-        {
-          meta: "Update",
-          title: "Expanding our network into the western bush",
-          summary:
-            "Thanks to a new wave of volunteers, we've successfully laid out 20 new traps targeting a known stoat corridor.",
-          href: "/stories",
-          image: {
-            src: "/images/covesunrise.JPEG",
-            alt: "Dawn colour across the water at Bob's Cove.",
-          },
-        },
-        {
-          meta: "Education",
-          title: "Why clearing and recording your traps matters",
-          summary:
-            "A quick guide on why consistent maintenance and logging your catches on Trap.NZ is vital for our landscape-scale strategy.",
-          href: "/stories",
-          image: {
-            src: "/images/trap2.jpeg",
-            alt: "Close-up of a trap box among dense green undergrowth.",
-          },
-        },
-        {
-          meta: "Wildlife",
-          title: "Bellbird numbers on the rise",
-          summary:
-            "Recent acoustic surveys and volunteer sightings point to a strong breeding season for our local Korimako population.",
-          href: "/stories",
-          image: {
-            src: "/images/bellbird.jpg",
-            alt: "Bellbird perched among native foliage.",
-          },
-        },
-      ],
-      note: "Join our mailing list to get these updates delivered directly to your inbox.",
     },
     contact: {
       eyebrow: "Get in touch",
@@ -512,11 +402,6 @@ export const siteContent = {
           href: "/get-involved",
           label: "Learn about volunteering",
           variant: "secondary" as const,
-        },
-        {
-          href: "/stories",
-          label: "Read our latest news",
-          variant: "ghost" as const,
         },
       ],
     },
