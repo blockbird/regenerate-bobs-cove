@@ -234,7 +234,7 @@ export default function HomePage() {
                 className={[
                   "group relative overflow-hidden rounded-xl bg-black/5",
                   tileSpans[item.shape],
-                  (item.shape as string) === "tall" ? "min-h-[40rem]" : (item.shape as string) === "full" ? "min-h-[30rem] md:min-h-[40rem]" : "min-h-[24rem]",
+                  (item.shape as string) === "tall" ? "min-h-[40rem]" : (item.shape as string) === "full" ? "min-h-[60vh] md:min-h-[80vh]" : "min-h-[24rem]",
                 ].join(" ")}
                 key={item.src}
               >
