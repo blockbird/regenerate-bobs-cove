@@ -16,11 +16,11 @@ export function SiteHeader() {
             className="h-10 w-10 rounded-full transition-transform duration-500 group-hover:scale-105"
             height={40}
             priority
-            src="/brand/RBCround.png"
+            src="/brand/logo-notext.png"
             width={40}
           />
           <div>
-            <strong className="block font-display text-xl tracking-tight text-white">
+            <strong className="block font-['DIN_Condensed',sans-serif] text-2xl font-bold tracking-tight text-white uppercase mt-0.5">
               {siteContent.siteName}
             </strong>
           </div>

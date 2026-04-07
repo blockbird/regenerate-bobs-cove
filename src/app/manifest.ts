@@ -10,7 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
     icons: [
       {
         sizes: "512x512",
-        src: "/brand/RBCround.png",
+        src: "/brand/logo-notext.png",
         type: "image/png",
       },
     ],

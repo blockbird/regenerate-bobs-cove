@@ -12,7 +12,7 @@ export function SiteFooter() {
             alt="Regenerate Bob's Cove logo"
             className="h-16 w-16 rounded-full"
             height={64}
-            src="/brand/RBCround.png"
+            src="/brand/logo-notext.png"
             width={64}
           />
           <h2 className="max-w-xl font-display text-5xl font-normal leading-[1.1] tracking-tight text-balance sm:text-6xl lg:text-7xl">

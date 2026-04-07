@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   applicationName: siteContent.siteName,
   category: "environment",
   icons: {
-    apple: "/brand/RBCround.png",
-    icon: "/brand/RBCround.png",
-    shortcut: "/brand/RBCround.png",
+    apple: "/brand/logo-notext.png",
+    icon: "/brand/logo-notext.png",
+    shortcut: "/brand/logo-notext.png",
   },
   openGraph: {
     description: siteContent.siteDescription,
