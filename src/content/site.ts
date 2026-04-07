@@ -99,7 +99,7 @@ export const siteContent = {
       eyebrow: "Our vision",
       title: "A thriving ecosystem where forest and community meet.",
       description:
-        "We have a difference worth defending. Our beech-clad slopes and shores are one of the best preserved native environments in the Wakatipu basin. The natural perimeter of lake shore, sub-alpine ridge line and the cliffs of the narrows give us a unique opportunity to defend from predators.",
+        "We have a difference worth defending. Our beech-clad slopes and shores are one of the best preserved native environments in the Wakatipu basin. The natural perimeter of lake shore, sub-alpine ridgeline and the cliffs of the narrows give us a unique opportunity to defend from predators.",
       image: {
         src: "/images/coveview.jpg",
         alt: "Lake edge and forested hillside meeting at Bobs Cove.",
@@ -228,9 +228,9 @@ export const siteContent = {
           shape: "half",
         },
         {
-          src: "/images/covesunset.png",
-          alt: "Sunset light over Bobs Cove.",
-          caption: "Evening light settling over the cove",
+          src: "/images/jetty.png",
+          alt: "Jetty at Bobs Cove.",
+          caption: "The historic jetty stretching into the lake",
           shape: "half",
         },
         {
@@ -240,9 +240,9 @@ export const siteContent = {
           shape: "half",
         },
         {
-          src: "/images/jetty.png",
-          alt: "Jetty at Bobs Cove.",
-          caption: "The historic jetty stretching into the lake",
+          src: "/images/covesunset.png",
+          alt: "Sunset light over Bobs Cove.",
+          caption: "Evening light settling over the cove",
           shape: "half",
         },
       ],
@@ -370,7 +370,7 @@ export const siteContent = {
             "Become part of our coordinated network. We'll assign you to a team, provide training, and get you walking one of our established trap lines.",
         },
         {
-          title: "Donate to the Trust",
+          title: "Donate to the cause",
           description:
             "Purchasing high-quality, humane traps and bait is expensive. Your financial support allows us to rapidly expand our predator-control network.",
         },

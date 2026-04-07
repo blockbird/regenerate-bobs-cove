@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/10 to-transparent" />
         </div>
 
-        <div className="shell relative z-10 flex flex-col items-center text-center pb-20 pt-32 sm:py-40">
+        <div className="shell relative z-10 flex flex-col items-center text-center pb-20 pt-16 sm:pb-40 sm:pt-24">
           <span className="text-xs font-semibold uppercase tracking-widest text-white/80">
             {home.hero.eyebrow}
           </span>
