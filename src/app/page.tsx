@@ -19,7 +19,7 @@ export default function HomePage() {
     <>
       <section
         aria-label="Homepage hero"
-        className="relative flex min-h-screen items-center justify-center overflow-hidden bg-ink text-white pt-20"
+        className="relative flex min-h-[calc(100vh-5rem)] items-center justify-center overflow-hidden bg-ink text-white"
       >
         <div className="absolute inset-0 z-0">
           <Image
