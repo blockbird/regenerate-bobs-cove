@@ -31,7 +31,7 @@ export default function HomePage() {
             src={home.hero.image.src}
           />
           {/* A more subtle gradient overlay to let the blue and green colors shine through */}
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/0 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/10 to-transparent" />
         </div>
 
         <div className="shell relative z-10 flex flex-col items-center text-center pb-20 pt-32 sm:py-40">
