@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ButtonLink } from "@/components/button-link";
+import { LandscapeGallery } from "@/components/landscape-gallery";
 import { SectionHeading } from "@/components/section-heading";
 import { siteContent } from "@/content/site";
 
@@ -25,7 +26,7 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <Image
             alt=""
-            className="object-cover object-center scale-105"
+            className="object-cover object-[center_75%] scale-105"
             fill
             priority
             sizes="100vw"
@@ -229,30 +230,7 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-6">
-            {home.landscape.gallery.map((item) => (
-              <figure
-                className={[
-                  "group relative overflow-hidden rounded-xl bg-black/5",
-                  tileSpans[item.shape],
-                  (item.shape as string) === "tall" ? "min-h-[40rem]" : (item.shape as string) === "full" ? "aspect-[4/3]" : (item.shape as string) === "half" ? "aspect-square" : "min-h-[24rem]",
-                ].join(" ")}
-                key={item.src}
-              >
-                <Image
-                  alt={item.alt}
-                  className="object-cover object-center transition duration-700 group-hover:scale-105"
-                  fill
-                  sizes="(max-width: 767px) 100vw, 50vw"
-                  src={item.src}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/0 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                <figcaption className="absolute inset-x-6 bottom-6 translate-y-4 text-sm font-medium tracking-wide text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                  {item.caption}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
+          <LandscapeGallery items={home.landscape.gallery} />
         </div>
       </section>
 

@@ -71,7 +71,7 @@ export const siteContent = {
         alt: "Aerial view across the turquoise water and shoreline of Bobs Cove.",
       },
       focusAreas: [
-        "Predator-free trapping",
+        "Predator trapping",
         "Biodiversity restoration",
         "Community kaitiakitanga",
       ],
