@@ -22,17 +22,17 @@ export default function WhyBobsCoveMattersPage() {
         title={page.title}
       />
 
-      <section className="py-8 pb-16 sm:pb-20">
-        <div className="shell grid gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-          <div className="grid gap-5">
+      <section className="py-12 sm:py-24">
+        <div className="shell grid gap-16 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-24">
+          <div className="flex flex-col gap-16">
             {page.sections.map((section) => (
-              <article className="panel-surface px-6 py-6 sm:px-7" key={section.title}>
-                <h2 className="font-display text-3xl leading-none tracking-[-0.04em] text-ink">
+              <article key={section.title}>
+                <h2 className="font-display text-4xl font-normal tracking-tight text-ink">
                   {section.title}
                 </h2>
-                <div className="mt-4 grid gap-4">
+                <div className="mt-6 flex flex-col gap-6">
                   {section.body.map((paragraph) => (
-                    <p className="text-sm leading-7 text-ink/72 sm:text-base" key={paragraph}>
+                    <p className="text-lg leading-relaxed text-charcoal" key={paragraph}>
                       {paragraph}
                     </p>
                   ))}
@@ -41,23 +41,23 @@ export default function WhyBobsCoveMattersPage() {
             ))}
           </div>
 
-          <div className="grid gap-5">
+          <div className="flex flex-col gap-16">
             {page.cards.map((card) => (
-              <article className="panel-surface overflow-hidden" key={card.title}>
-                <div className="relative aspect-[16/10]">
+              <article key={card.title} className="group">
+                <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-black/5">
                   <Image
                     alt={card.image.alt}
-                    className="object-cover object-center"
+                    className="object-cover object-center transition duration-700 group-hover:scale-105"
                     fill
                     sizes="(max-width: 1023px) 100vw, 40vw"
                     src={card.image.src}
                   />
                 </div>
-                <div className="px-6 py-6">
-                  <h2 className="font-display text-3xl leading-none tracking-[-0.04em] text-ink">
+                <div className="mt-6">
+                  <h3 className="font-display text-3xl font-normal tracking-tight text-ink">
                     {card.title}
-                  </h2>
-                  <p className="mt-3 text-sm leading-7 text-ink/72 sm:text-base">
+                  </h3>
+                  <p className="mt-4 text-base leading-relaxed text-charcoal">
                     {card.description}
                   </p>
                 </div>

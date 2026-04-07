@@ -23,40 +23,42 @@ export default function GetInvolvedPage() {
         title={page.title}
       />
 
-      <section className="py-8 pb-16 sm:pb-20">
+      <section className="py-12 sm:py-24">
         <div className="shell">
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-12 md:grid-cols-3 lg:gap-16">
             {page.opportunities.map((opportunity, index) => (
-              <article className="panel-surface px-6 py-6 sm:px-7" key={opportunity.title}>
-                <span className="inline-grid h-9 w-9 place-items-center rounded-full border border-lime/26 bg-lime/14 text-sm font-extrabold text-deep">
-                  {index + 1}
+              <article key={opportunity.title}>
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-ink/10 text-xs font-semibold text-charcoal">
+                  0{index + 1}
                 </span>
-                <h2 className="mt-5 font-display text-3xl leading-none tracking-[-0.04em] text-ink">
+                <h2 className="mt-6 font-display text-3xl font-normal tracking-tight text-ink">
                   {opportunity.title}
                 </h2>
-                <p className="mt-3 text-sm leading-7 text-ink/72 sm:text-base">
+                <p className="mt-4 text-base leading-relaxed text-charcoal">
                   {opportunity.description}
                 </p>
               </article>
             ))}
           </div>
 
-          <div className="mt-6 rounded-[2rem] bg-[radial-gradient(circle_at_top_left,rgba(148,205,66,0.15),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(94,199,216,0.12),transparent_30%),linear-gradient(135deg,#00373c_0%,#004c51_100%)] px-6 py-7 text-white shadow-[0_32px_80px_rgba(0,40,43,0.24)] sm:px-8 sm:py-8">
-            <h2 className="font-display text-4xl leading-none tracking-[-0.05em] text-balance">
-              Ready for confirmed next steps.
-            </h2>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-white/76 sm:text-base">
-              {page.note}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              {page.actions.map((action) => (
-                <ButtonLink
-                  href={action.href}
-                  key={action.href}
-                  label={action.label}
-                  variant={action.variant}
-                />
-              ))}
+          <div className="mt-24 rounded-[2rem] bg-ink px-6 py-20 text-center sm:px-16 sm:py-32 lg:px-24">
+            <div className="mx-auto max-w-4xl">
+              <h2 className="font-display text-4xl font-normal leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Ready for confirmed next steps.
+              </h2>
+              <p className="mt-8 text-lg leading-relaxed text-white/80 sm:text-xl">
+                {page.note}
+              </p>
+              <div className="mt-12 flex flex-wrap justify-center gap-4">
+                {page.actions.map((action) => (
+                  <ButtonLink
+                    href={action.href}
+                    key={action.href}
+                    label={action.label}
+                    variant={action.variant}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
