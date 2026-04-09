@@ -5,14 +5,35 @@ import { useState } from "react";
 export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate sending
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+
+    try {
+      // REPLACE 'YOUR_EMAIL_HERE' WITH YOUR ACTUAL EMAIL ADDRESS
+      const response = await fetch("https://formsubmit.co/ajax/YOUR_EMAIL_HERE", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        setError("Oops! Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setError("Oops! Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (isSubmitted) {
@@ -39,6 +60,10 @@ export function ContactForm() {
 
   return (
     <form className="grid gap-6 rounded-2xl bg-white p-8 shadow-sm sm:p-12 border border-ink/5" onSubmit={handleSubmit}>
+      {/* Optional FormSubmit configuration fields */}
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="New message from Regenerate Bobs Cove website!" />
+      
       <div className="mb-2">
         <h2 className="font-display text-3xl font-normal tracking-tight text-ink">
           Send us a message
@@ -47,6 +72,13 @@ export function ContactForm() {
           Fill out the form below and we'll be in touch.
         </p>
       </div>
+      
+      {error && (
+        <div className="rounded-lg bg-red-50 p-4 text-sm text-red-600">
+          {error}
+        </div>
+      )}
+
       <div className="grid gap-6 sm:grid-cols-2">
         <div className="grid gap-2">
           <label htmlFor="name" className="text-sm font-medium text-ink">
@@ -54,6 +86,7 @@ export function ContactForm() {
           </label>
           <input
             id="name"
+            name="name"
             required
             className="w-full rounded-lg border border-ink/10 bg-black/5 px-4 py-3 text-base text-ink outline-none transition-all placeholder:text-ink/40 focus:border-deep/30 focus:bg-white focus:ring-2 focus:ring-deep/20"
             placeholder="Jane Doe"
@@ -65,6 +98,7 @@ export function ContactForm() {
           </label>
           <input
             id="email"
+            name="email"
             type="email"
             required
             className="w-full rounded-lg border border-ink/10 bg-black/5 px-4 py-3 text-base text-ink outline-none transition-all placeholder:text-ink/40 focus:border-deep/30 focus:bg-white focus:ring-2 focus:ring-deep/20"
@@ -78,6 +112,7 @@ export function ContactForm() {
         </label>
         <select
           id="subject"
+          name="subject"
           required
           className="w-full rounded-lg border border-ink/10 bg-black/5 px-4 py-3 text-base text-ink outline-none transition-all focus:border-deep/30 focus:bg-white focus:ring-2 focus:ring-deep/20"
         >
@@ -94,6 +129,7 @@ export function ContactForm() {
         </label>
         <textarea
           id="message"
+          name="message"
           required
           rows={5}
           className="w-full resize-none rounded-lg border border-ink/10 bg-black/5 px-4 py-3 text-base text-ink outline-none transition-all placeholder:text-ink/40 focus:border-deep/30 focus:bg-white focus:ring-2 focus:ring-deep/20"
