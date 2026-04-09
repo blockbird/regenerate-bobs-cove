@@ -67,7 +67,7 @@ export function LandscapeGallery({ items }: { items: readonly GalleryItem[] }) {
             className={[
               "group relative overflow-hidden rounded-xl bg-black/5 cursor-pointer",
               tileSpans[item.shape],
-              item.shape === "tall" ? "min-h-[40rem]" : item.shape === "full" ? "aspect-[4/3]" : item.shape === "half" ? "aspect-square" : "min-h-[24rem]",
+              item.shape === "tall" ? "min-h-[40rem]" : item.shape === "full" ? "aspect-[4/3]" : item.shape === "half" ? "aspect-square" : item.shape === "wide" ? "aspect-[3/2] sm:aspect-[2/1]" : "aspect-[4/5] sm:aspect-square",
             ].join(" ")}
             key={item.src}
             onClick={() => setSelectedIndex(index)}
