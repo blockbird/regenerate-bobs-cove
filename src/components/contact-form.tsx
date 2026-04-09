@@ -15,8 +15,7 @@ export function ContactForm() {
     const formData = new FormData(e.currentTarget);
 
     try {
-      // REPLACE 'YOUR_EMAIL_HERE' WITH YOUR ACTUAL EMAIL ADDRESS
-      const response = await fetch("https://formsubmit.co/ajax/YOUR_EMAIL_HERE", {
+      const response = await fetch("https://formsubmit.co/ajax/glen@blockbird.co", {
         method: "POST",
         headers: {
           Accept: "application/json",
