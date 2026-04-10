@@ -297,7 +297,7 @@ export const siteContent = {
           title: "A vital biodiversity hotspot",
           description: "Protecting our native species.",
           body: [
-            "Bobs Cove isn't just a scenic backdrop; it is a critical habitat for native birds, lizards, and invertebrates. The kanuka-clad hills and dense beech forests offer refuge to species that are highly vulnerable to introduced predators.",
+            "Bobs Cove isn't just a scenic backdrop; it is a critical habitat for native birds, lizards, moths and invertebrates. The beech forest clad slopes offer refuge to species that are highly vulnerable to introduced predators.",
             "By establishing a robust trapping network here, we aren't just saving individual animals—we are restoring the entire ecosystem's natural balance and contributing to the national Predator Free 2050 initiative.",
           ],
         },
@@ -340,7 +340,7 @@ export const siteContent = {
         {
           title: "AT220 & DOC200 Traps",
           description:
-            "We rely on a combination of self-resetting AT220 traps for continuous control in the canopy, alongside DOC200 ground traps targeting mustelids.",
+            "We rely on a combination of self-resetting AT220 traps for possums alongside DOC200 ground traps targeting both mustelids and rats.",
           image: {
             src: "/images/at220-trap.png",
             alt: "A wooden trap box set amongst dense native ferns and undergrowth.",
