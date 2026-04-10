@@ -338,12 +338,12 @@ export const siteContent = {
           },
         },
         {
-          title: "Our volunteers",
+          title: "AT220 & DOC200 Traps",
           description:
-            "The dedication of our local trapping coordinators and backyard trappers is the engine driving this conservation success.",
+            "We rely on a combination of self-resetting AT220 traps for continuous control in the canopy, alongside DOC200 ground traps targeting mustelids.",
           image: {
-            src: "/images/trap4.JPEG",
-            alt: "Volunteer with field gear standing in open grass with hills beyond.",
+            src: "/images/at220-trap.png",
+            alt: "A wooden trap box set amongst dense native ferns and undergrowth.",
           },
         },
       ],
