@@ -19,7 +19,6 @@ export type SocialLink = {
 
 const navigation = [
   { href: "/", label: "Home" },
-  { href: "/why-bobs-cove-matters", label: "Why Bobs Cove Matters" },
   { href: "/get-involved", label: "Volunteer" },
   { href: "/contact", label: "Contact" },
 ];
